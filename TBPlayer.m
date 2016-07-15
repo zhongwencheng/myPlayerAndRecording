@@ -38,7 +38,7 @@ NSString *const kTBPlayerLoadProgressChangedNotification = @"TBPlayerLoadProgres
 
 @property (nonatomic, weak)   UIView         *showView;
 
-@property (nonatomic, strong) UIView         *navBar;
+
 @property (nonatomic, strong) UILabel        *currentTimeLabel;
 @property (nonatomic, strong) UILabel        *totolTimeLabel;
 @property (nonatomic, strong) UIProgressView *videoProgressView;  //缓冲进度条
@@ -191,9 +191,9 @@ NSString *const kTBPlayerLoadProgressChangedNotification = @"TBPlayerLoadProgres
 
 - (void)fullScreen
 {
-    _navBar.hidden = YES;
-    self.currentPlayerLayer.transform = CATransform3DMakeRotation(M_PI/2, 0, 0, 1);
-    self.currentPlayerLayer.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
+//    _navBar.hidden = YES;
+//    self.currentPlayerLayer.transform = CATransform3DMakeRotation(M_PI/2, 0, 0, 1);
+//    self.currentPlayerLayer.frame = CGRectMake(0, 0, kScreenWidth, kScreenHeight);
 }
 
 - (void)halfScreen

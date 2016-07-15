@@ -30,7 +30,7 @@ typedef NS_ENUM(NSInteger, TBPlayerState) {
 @property (nonatomic, readonly) CGFloat       current;          //当前播放时间
 @property (nonatomic, readonly) CGFloat       progress;         //播放进度 0~1
 @property (nonatomic          ) BOOL          stopWhenAppDidEnterBackground;// default is YES
-
+@property (nonatomic, strong) UIView         *navBar;
 
 + (instancetype)sharedInstance;
 - (void)playWithUrl:(NSURL *)url showView:(UIView *)showView;

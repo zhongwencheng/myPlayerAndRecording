@@ -183,9 +183,9 @@ NSString *const kTBPlayerLoadProgressChangedNotification = @"TBPlayerLoadProgres
     
     [[NSNotificationCenter defaultCenter] postNotificationName:kTBPlayerProgressChangedNotification object:nil];
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(halfScreen)];
+    //UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(halfScreen)];
     
-    [showView addGestureRecognizer:tap];
+    //[showView addGestureRecognizer:tap];
 }
 
 
@@ -258,7 +258,7 @@ NSString *const kTBPlayerLoadProgressChangedNotification = @"TBPlayerLoadProgres
 - (void)pause
 {
     if (!self.currentPlayerItem) {
-        return;
+        return; 
     }
     [_stopButton setImage:[UIImage imageNamed:@"icon_play"] forState:UIControlStateNormal];
     [_stopButton setImage:[UIImage imageNamed:@"icon_play_hl"] forState:UIControlStateHighlighted];

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CaptureVideoPreviewLayer : UIView
-
+@interface Focus : UIView
+@property(nonatomic ,strong)UIImage*drawImage;
 @end
